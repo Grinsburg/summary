@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>alpha</title>
+</head>
+<body>
+   <header>
+       <nav class="navbar">
+           <div class="col-md-12 col-sm-12">
+               <div class="row justify-content-center">
+                   <div class="col-md-2 col-sm-12  offset-md-1">
+                       <div class="row justify-content-center">
+                           <ul class="list-unstyled list-inline">
+                               <li class="list-inline-item text-white namecmp text-center">
+                                   <a href="#" class="text-white text-center logo">
+                                        <span class="letter">Q</span>
+                                        <span>Fix</span>
+                                   </a>
+                                </li>
+                           </ul>
+                       </div>
+                   </div>
+                   
+                   <div class="col-md-4 col-12 col-sm-12">
+                       <div class="row justify-content-center">
+                           <div class="col-md-6 col-sm-5 col-8 pt-3"><a href="#">Для автосервисов</a></div>
+                           <div class="col-md-6 col-sm-5 col-8 pt-3"><a href="#">Для автовладельцев</a></div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-6 col-sm-6 offset-md-1 btn-reg">
+                       <div class="row justify-content-center">
+                          <div class="col-md-4 col-sm-6 col-4 pt-3"><a href="#" ><i class="fas fa-user pr-2"></i>Войти</a></div>
+                          <div class="col-md-5 col-sm-6 col-6 pt-3"><a href="#"><i class="fas fa-user-plus pr-2"></i>Регистрация</a></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </nav>
+       <div class="container-fluid pb-5">
+           <div class="row justify-content-center pt-5 pb-5">
+               <div class="col-md-12 pt-5 pb-5">
+                   <div class="row align-items-start pt-5 pb-5">
+                       <div class="col-md-8 col-sm-12 text-center pb-5">
+                           <div class="row justify-content-center pr-5">
+                               <div class="">
+                                   <span class="text-white logotext"><span style="color: #d74b48;">QUICK</span> FIX</span>
+                                   <p class="text-white">первый в Беларуси сервис<br> для объединения автосервисов</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+            <!--Форма регистрация -->
+
+            <div class="container form pt-5">
+                <div class="row">
+        
+                    <!-- Первая форма - стандартная -->
+                     <div id="clientForm" class="col-md-5 offset-6 registrationForm mt-5"> 
+                        <img src="images/logo.png" alt="" style="transform: translateY(-50%); margin-bottom: -20%;">
+                        <div class="linkToService ml-5">
+                            <img src="images/automobile-with-wrench.png" alt="">
+                            <a href="#" id="flipToService" class="link ml-3">Сотрудничать с QFix</a>
+                        </div>
+                        <div>
+                            <span class="textOr" style="position: relative; font-weight: bolder;">или</span>
+                        </div>
+                        <div class="linkToClient ml-5">
+                            <img src="images/group.png" alt="">
+                            <a href="#" class="ml-3" style="pointer-events: none;">Присоединиться к QFix</a>
+                        </div>
+                        <div class="ml-5 mt-4 pl-3 placeOfInputs">
+                            <div class="row">
+                                <input type="text" class=" order-12"   name="userName" required="">
+                                <i class="fas  order-1 fa-user-circle icon"></i>
+                                <label>Введите ваше имя</label>
+                            </div>
+                            <div class="row">
+                                    
+                                <input type="text"  class=" order-12" name="userSurname" required="">
+                                <i class="fas order-1 fa-address-book icon"></i>
+                                <label>Введите вашу фамилия</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" class=" order-12" name="userEmail" required="">
+                                <i class="fas order-1 fa-envelope icon"></i>
+                                <label>Введите эл.почту</label>
+                            </div>
+                            <div class="row">
+                                <input type="password" class=" order-12" name="userPassword" required="">
+                                <i class="fas order-1 fa-lock icon"></i>
+                                <label>Придумайте пароль</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" class=" order-12" name="userCity" required="">
+                                <i class="fas order-1 fa-map-marker icon"></i>
+                                <label>Введите город</label>
+                            </div>
+                            <input type="button" name="acceptButton icon" value="Продолжить">
+                        </div>
+                      </div>
+        
+                      <!-- Вторая форма - при нажатии -->
+                      <div id="serviceForm" class="col-md-5 offset-6 registrationForm mt-5">
+                        <img src="images/logo-service.png" alt="" style="transform: translateY(-50%); margin-bottom: -20%;">
+                        <div class="linkToClient ml-5">
+                            <img src="images/group-service.png" alt="">
+                            <a href="#" id="flipToClient" class="ml-3">Присоединиться к QFix</a>
+                        </div>
+                        <div>
+                            <span class="textOr" style="position: relative; font-weight: bolder;">или</span>
+                        </div>
+                        <div class="linkToService ml-5">
+                            <img src="images/automobile-service.png" alt="">
+                            <a href="#" class="link ml-3" style="pointer-events: none;">Сотрудничать с QFix</a>
+                        </div>
+                        <div class="ml-5 mt-4 pl-3 placeOfInputs">
+                                <div class="row">
+                                        <input type="text" class=" order-12"   name="userName" required="">
+                                        <i class="fas  order-1 fa-clipboard-list icon"></i>
+                                        <label>Введите название автосервиса</label>
+                                </div>
+                                <div class="row">
+                                    
+                                        <input type="text"  class=" order-12" name="userSurname" required="">
+                                        <i class="fas order-1 fa-address-book icon"></i>
+                                        <label>Введите вашу фамилия</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" class=" order-12" name="userEmail" required="">
+                                        <i class="fas order-1 fa-envelope icon"></i>
+                                        <label>Введите эл.почту</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="password" class=" order-12" name="userPassword" required="">
+                                        <i class="fas order-1 fa-lock icon"></i>
+                                        <label>Придумайте пароль</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" class=" order-12" name="userCity" required="">
+                                        <i class="fas order-1 fa-map-marker icon"></i>
+                                        <label>Введите город</label>
+                                    </div>
+                            <input type="button" class="button-service" name="acceptButton" value="Продолжить">
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+   </header>
+   <div class="container-fluid about">
+       <div class="row pt-5 pb-5">
+           <div class="col-md-12 pt-5 pb-5">
+               <div class="row justify-content-center">
+                           <div class="col-md-2 col-6 offset-md-2" style="z-index: 1;">
+                              <img src="fonts/about.png"  alt="">
+                           </div>
+                           <div class="col-md-8 col-sm-12 align-self-end">
+                               <div class="row">
+                                   <div class="col-md-10  bg-white">
+                                       <div class="row justify-content-center pl-5 pt-1 pb-1">
+                                           <div class="col-md-10 pl-5">
+                                               <h3 class="pl-1">КТО МЫ?</h3>
+                                               <hr class="hrs">
+                                               <p>В современном мире существует огромное количество автомобилей. Для их диагностики и ремонта задействовано огромное количество автосервисов. <br>
+                                               Зачастую, автовладельцы недостаточно информированы о услугах, которые оказывают данные сервисы и качестве оказываемых работ. Некоторые автосервисы и вовсе остаются в тени. Автовладельцы не могут найти подходящий для себя автосервис, а также не могут оценить  качество их услуг.
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container-fluid work">
+       <div class="row pb-5">
+           <div class="col-md-12 pt-5 pb-5 text-white">
+                <h3 class="text-center">КАК ЭТО РАБОТАЕТ?</h3>
+                <hr class="hr">
+           </div>
+           <div class="col-md-12 pb-5 pt-5">
+               <div class="row justify-content-center">
+                   <div class="col-md-2 col-8 col-sm-4  text-white">
+                       <div class="pl-4 pt-1 pb-2">
+                           <div class="block1 pt-4 pl-4">
+                               <img src="fonts/engine-problems.png" width="80%"  height="70%" alt="">
+                           </div>
+                       </div>
+                       <div class="numericround text-center mgn-l">
+                           <span>1</span>
+                       </div>
+                       <p class="texthelp pl-5">Сломалась машина?<br>Мы поможем</p>
+                   </div>
+                   <div class="col-md-2 col-8 col-sm-4 text-white ">
+                       <div class="pl-4 pb-2 pt-1">
+                           <div class="block1 pt-4 pl-4">
+                               <img src="fonts/smartphone.png" width="80%" alt="">
+                           </div>
+                       </div>
+                       <div class="numericround text-center mgn-l">
+                           <span>2</span>
+                       </div>
+                       <p class="texthelp pl-5">Найди с помощью<br>QFix ближайший<br>автосервис и оставь<br>заявку</p>
+                   </div>
+                   <div class="col-md-2 col-8 col-sm-4 text-white">
+                       <div class="pl-4 pt-1 pb-2">
+                           <div class="block1 pt-4 pl-4">
+                               <img src="fonts/holding-wrench.png" width="80%" alt="">
+                           </div>
+                       </div>
+                       <div class="numericround text-center mgn-l">
+                           <span>3</span>
+                       </div>
+                       <p class="texthelp pl-5">Автосервис<br>отремонтирует<br>Ваш авто</p>
+                   </div>
+                   <div class="col-md-2 col-8 col-sm-4 text-white ">
+                       <div class="pl-4 pb-1 pb-2">
+                           <div class="block1 pt-4 pl-4">
+                               <img src="fonts/payment-method.png" width="80%" alt="">
+                           </div>
+                       </div>
+                       <div class="numericround text-center mgn-l">
+                           <span>4</span>
+                       </div>
+                       <p class="texthelp pl-5">Вы оплатите через<br>наш сайт работу</p>
+                   </div>
+                   <div class="col-md-2 col-8 col-sm-4 text-white">
+                       <div class="pl-4 pt-1 pb-2">
+                           <div class="block1 pt-4 pl-4">
+                               <img src="fonts/fix-sign.png" width="80%" alt="">
+                           </div>
+                       </div>
+                       <div class="numericround text-center mgn-l">
+                           <span>5</span>
+                       </div>
+                       <p class="texthelp pl-5">Готово, <br> можно ехать</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container-fluid">
+       <div class="row pb-5">
+           <div class="col-md-12 text-center pt-5">
+               <h3>НАШИ ПРЕИМУЩЕСТВА</h3>
+           </div>
+          
+               
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                             <div class="service-box">
+                                 <i class="fas fa-wrench"></i>
+                                 <h4 class="title">Скорость</h4>
+                                 <p class="desript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis inventore omnis ad!</p>
+                             </div>
+                        </div>
+             
+                        <div class="col-md-4 col-sm-6">
+                             <div class="service-box">
+                                 <i class="fa fa-thumbs-up"></i>
+                                 <h4 class="title">Удобство</h4>
+                                 <p class="desript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis inventore omnis ad!</p>
+                             </div>
+                        </div>
+             
+                        <div class="col-md-4 col-sm-6">
+                             <div class="service-box">
+                                 <i class="fa fa-clipboard-check"></i>
+                                 <h4 class="title">Надежность</h4>
+                                 <p class="desript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis inventore omnis ad!</p>
+                             </div>
+                        </div>
+             <!--
+                        <div class="col-md-3 col-sm-6">
+                             <div class="service-box">
+                                 <i class="fa fa-cog"></i>
+                                 <h4 class="title">Web Design</h4>
+                                 <p class="desript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis inventore omnis ad!</p>
+                             </div>
+                        </div>
+                    -->
+
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container-fluid clients">
+       <div class="row pt-5 pb-5">
+           <div class="col-md-12 text-center text-white pb-5">
+               <h3 class="">СЧАСТЛИВЫЕ КЛИЕНТЫ</h3>
+               <hr class="hr">
+           </div>
+           <div class="col-md-12 col-sm-12">
+               <div class="row justify-content-center">
+                   <div class="col-md-4 col-sm-8">
+                       <div class="circle"></div>
+                       <div class="review">
+                           <div class="row justify-content-end p-1">
+                               <div class="col-md-5">
+                                   <h6 class="text-black text-center">Рейтинг 4.0</h6>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <h5 class="text-center">Илон Маск, 34 года</h5>
+                           </div>
+                           <div class="col-md-12">
+                               <p class="textview">Колеса в моей Tesla заменили хорошо, ребяты Вы реальные молодцы. Ваш проект очень хорошо, он помогает людям жить лучше.
+                               Спасибо!</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-sm-8">
+                       <div class="circle"></div>
+                       <div class="review">
+                           <div class="row justify-content-end p-1">
+                               <div class="col-md-5">
+                                   <h6 class="text-black text-center">Рейтинг 4.0</h6>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <h5 class="text-center">Илон Маск, 34 года</h5>
+                           </div>
+                           <div class="col-md-12">
+                               <p class="textview">Колеса в моей Tesla заменили хорошо, ребяты Вы реальные молодцы. Ваш проект очень хорошо, он помогает людям жить лучше.
+                               Спасибо!</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-12  pt-5 pb-5">
+               <div class="row justify-content-center">
+                   <div class="col-md-4 col-sm-8">
+                       <div class="circle"></div>
+                       <div class="review">
+                           <div class="row justify-content-end p-1">
+                               <div class="col-md-5">
+                                   <h6 class="text-black text-center">Рейтинг 4.0</h6>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <h5 class="text-center">Илон Маск, 34 года</h5>
+                           </div>
+                           <div class="col-md-12">
+                               <p class="textview">Колеса в моей Tesla заменили хорошо, ребяты Вы реальные молодцы. Ваш проект очень хорошо, он помогает людям жить лучше.
+                               Спасибо!</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-sm-8">
+                       <div class="circle"></div>
+                       <div class="review">
+                           <div class="row justify-content-end p-1">
+                               <div class="col-md-5">
+                                   <h6 class="text-black text-center">Рейтинг 4.0</h6>
+                               </div>
+                           </div>
+                           <div class="col-md-12">
+                               <h5 class="text-center">Илон Маск, 34 года</h5>
+                           </div>
+                           <div class="col-md-12">
+                               <p class="textview">Колеса в моей Tesla заменили хорошо, ребяты Вы реальные молодцы. Ваш проект очень хорошо, он помогает людям жить лучше.
+                               Спасибо!</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container-fluid maps">
+       <div class="row pt-5 pb-5">
+           <div class="col-md-12 col-12 text-center">
+               <h3>НАЙДИТЕ СЕРВИС РЯДОМ</h3>
+               <hr class="hr">
+           </div>
+           <div class="col-md-12 col-12">
+               <div class="row">
+                   <div class="col-md-10 offset-md-1 pb-5">
+                       <img src="fonts/maps.png" width="100%" alt="">
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container-fluid search">
+       <div class="row pt-3 pb-3 justify-content-center">
+          <div class="col-md-1 col-2 text-right">
+              <h5 class="text-white pt-3 text-center">Поиск</h5>
+          </div>
+           <div class="col-md-6 col-6 pt-1">
+               <input type="text" class="inputsearch" placeholder="Что у Вас случилось?">
+           </div>
+           <div class="col-md-3 col-4 pt-1">
+               <button class="btn btnsearch">Найти</button>
+           </div>
+       </div>
+   </div>
+   <footer>
+       <div class="container-fluid">
+           <div class="row pt-5">
+               <div class="col-md-12 col-12 col-sm-12">
+                   <div class="row rows justify-content-center">
+                       <div class="col-md-3 col-4 offset-md-1">
+                           <ul class="list-unstyled">
+                               <li class="text-header">Категории</li>
+                               <li><a href="">Как это работает</a></li>
+                               <li><a href="">Услуги</a></li>
+                               <li><a href="">Наши преимущества</a></li>
+                               <li><a href="">Отзывы клиентов</a></li>
+                               <li><a href="">Поиск на карте</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-3 col-4">
+                           <ul class="list-unstyled">
+                               <li class="text-header">Полезное</li>
+                               <li><a href="">Наши партнеры</a></li>
+                               <li><a href="">Вопросы-ответы</a></li>
+                               <li><a href="">Пользовательское соглашение</a></li>
+                               <li><a href="">Техническая поддержка</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-3 col-4">
+                           <ul class="list-unstyled">
+                               <li class="text-header">Контакты</li>
+                               <li><i class="icon ion-ios-location pr-2 pr-3"></i><span>Пинск, ул. ИПД, 20</span></li>
+                               <li><i class="icon ion-ios-telephone pr-2 pr-3"></i><span>80(29)444-44-77</span></li>
+                               <li><i class="icon ion-android-mail pr-2 pr-3" ></i><span>qfix@corporation.com</span></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-12 copyrate">
+                   <div class="row justufy-content-center">
+                       <div class="col-md-12 text-center">
+                           <hr class="hrs">
+                           <h5>Quick Fix 2018 / Все права защищены ©</h5>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#flipToService").click(function(){
+				$("#clientForm").css("-webkit-animation-name", "showServiceForm");
+				$("#clientForm").css("transform", " rotateY(180deg)");
+
+				$("#serviceForm").css("-webkit-animation-name", "hideClientForm");
+				$("#serviceForm").css("transform", "rotateY(0deg)");
+			})
+
+			$("#flipToClient").click(function(){
+				$("#serviceForm").css("-webkit-animation-name", "showClientForm");
+				$("#serviceForm").css("transform", "rotateY(180deg)");
+
+				$("#clientForm").css("-webkit-animation-name", "hideServiceForm");
+				$("#clientForm").css("transform", " rotateY(0deg)");
+			})
+		});
+	</script>
+</body>
+</html>

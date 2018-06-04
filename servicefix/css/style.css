@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+*{
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-image: url(../fonts/car-970353_1920.jpg);
+    background-size: cover;
+}
+
+/*#dddddd*/
+/*#d74b48*/
+/*#4d4d4d*/
+.logotext{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+p.text-white{
+    font-size: 20px;
+}
+.aboutus {
+    z-index: 1;
+}
+
+.aboutimg {
+    
+    display: inline-block;
+}
+
+.about {
+    background-color: #dddddd;
+}
+
+.hr{
+    width: 100%;
+    background-color: white;
+}
+
+.work {
+    background-color: #d74b48;
+}
+
+.block1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+}
+
+
+.service-box{
+    text-align: center;
+    padding: 35px 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease;
+    margin-top: 50px;
+}
+.service-box:hover{
+    background: #d74b48; 
+}
+.service-box::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-width: 20px;
+    border-style: solid;
+    border-color:white white rgba(1, 1, 1, 0.2) rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:-40px;
+    right: -40px;
+    transition: all .3s ease;
+}
+.service-box:hover::before{
+    top:0;
+    right: 0;
+}
+.service-box i{
+    display: block;
+    font-size: 75px;
+    color:#d74b48;
+    margin-bottom: 14px;
+    transition: all .3s ease;
+}
+.service-box .title{
+    font-size: 24px;
+    font-weight: 900;
+    color: #545454;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 0 16px 0;
+    transition: all .3s ease;
+}
+
+.service-box desript{
+    font-size: 18px;
+    color:#545454;
+    line-height: 25px;
+    margin: 0;
+    transition: all .3s ease;
+
+}
+.service-box:hover i,
+.service-box:hover .title,
+.service-box:hover .desript{
+    color: white;
+}
+
+.clients {
+    background-color: #d74b48;
+}
+
+.review{
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.circle{
+    position: absolute;
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow:  0 0 10px gray;
+    background-image: url(../fonts/ilonmask.jpg);
+    background-size: cover;
+}
+.btnsearch {
+    border: 2px solid white;
+    background-color: #d74b48;
+    height: 85%;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    
+}   
+
+.maps {
+    background-color: #ddd;
+}
+
+.search {
+    background-color: #d74b48;
+}
+
+.inputsearch {
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding-left: 1%;
+}
+
+.col-md-7 span{
+    font-size: 20px;
+}
+
+footer{
+    background-color: #232323;
+}
+
+div.rows ul li{
+    color: #ddd;
+    padding-top: 5px;
+}
+
+div.rows ul li:nth-child(1){
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+div.rows ul li:nth-child(2){
+    padding-top: 20px;
+}
+
+.hrs{
+    width: 100%;
+    background-color: gray;
+}
+
+li a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+li a:hover{
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+.textview {
+    font-size: 14px;
+}
+
+.texthelp {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.numericround {
+    background-color: white;
+    color: #d74b48;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mgn-l {
+    margin-left: 43%;
+}
+
+
+.namecmp {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#ddd;
+}
+.navbar a:hover{
+    color:#d74b48;
+}
+.navbar a:hover i{
+    font-size: 17px;
+}
+.navbar li a{
+    font-size: 36px;
+    font-weight: bold;
+}
+.navbar li .letter{
+    color: #d74b48;
+    margin-right: -8px;
+    
+}
+footer .list-unstyled .text-header{
+    color:#ddd;
+}
+footer .list-unstyled li a, footer .list-unstyled li span, .copyrate h5{
+    color:#555;
+    font-size: 15px;
+}
+footer .list-unstyled li i{
+    color:#d74b48;
+    font-size: 22px;
+}
+footer .list-unstyled li a:hover{
+    color:#ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
